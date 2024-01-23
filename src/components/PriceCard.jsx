@@ -11,7 +11,7 @@ const PriceCard = (props) => {
     const buttonName = props.type === 'buy' ? 'Buy here' : (props.type === 'sell' ? 'Sell here' : '')
 
     const finalClassName = className('bg-white rounded-md w-96 grid grid-flow-col grid-cols-4 p-3 shadow-md', props.className)
-    const buttonClassName = className(props.type === 'buy' ? 'bg-green-100 border-green-400 text-green-500' : 'bg-red-100 border-red-400 text-red-500', 'p-1 rounded-md row-start-5 col-start-3 col-span-2' )
+    const buttonClassName = className(props.type === 'buy' ? 'bg-green-100 hover:bg-green-200 border-green-400 text-green-500' : 'bg-red-100 hover:bg-red-200 border-red-400 text-red-500', 'p-1 rounded-md row-start-5 col-start-3 col-span-2 self-end mt-16 py-3' )
     const priceClassName = className(props.type === 'buy' ? 'text-red-500 ' : 'text-green-500 ', 'col-span-3 row-start-4 text-2xl font-bold')
 
     return (

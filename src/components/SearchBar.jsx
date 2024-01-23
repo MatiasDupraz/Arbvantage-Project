@@ -3,7 +3,7 @@ import Icon from './Icon'
 import classNames from 'classnames'
 
 const SearchBar = ({className, children, ...props}) => {
-  const finalClassName = classNames('bg-white border-gray-800 rounded-md flex  shadow-md ', className)
+  const finalClassName = classNames('bg-white border-gray-800 rounded-md flex  shadow ', className)
 
   return (
     <form {...props} className={finalClassName}>
